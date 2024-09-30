@@ -153,12 +153,13 @@ $(document).ready(function () {
 
         if(score > 15){
         let a= $("#name").val();
-        alert(` ${a} Your score is ${score} and you  are passed 'CONGRATULATIONS ! 🤩🤩🤩🤩🤩'`)
+        alert(` ${a} Your score is ${score} and you  are passed 'CONGRATULATIONS ! 🤩🤩🤩🤩🤩'`);
+        location.reload();
         }
         else{
             let a= $("#name").val();
-            alert(`${a} sorry you are failed ! 😓😓😓`)
-            
+            alert(`${a} sorry you are failed ! 😓😓😓 `)
+            location.reload();
         }
     });
 
