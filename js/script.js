@@ -83,7 +83,7 @@ $(document).ready(function () {
         }, {
             question: "16).Which of the following methods can be used to display data in some form using Javascript?"
             , options: ["document.write()", "console.log()", "window.alert()","all of the above"],
-            answer: "continue"
+            answer: "all of the above"
         }, {
             question: "17).Which keyword is used to skip the current iteration of a loop and move to the next one?"
             , options: ["filter", "map", "skip","pass"],
@@ -151,7 +151,11 @@ $(document).ready(function () {
                 
         })
 
-        if(score > 15){
+        let b= $(".headin").val();
+        if(b == ""){
+            alert("Please ENter your name")
+        }
+            else if(score > 15){
         let a= $("#name").val();
         alert(` ${a} Your score is ${score} and you  are passed 'CONGRATULATIONS ! 🤩🤩🤩🤩🤩'`);
         location.reload();
